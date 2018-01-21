@@ -1,5 +1,5 @@
 
-package net.webservicex;
+package appComponents.ws.net.webservicex;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="CountryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="GetCitiesByCountryResult" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,36 +29,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "countryName"
+    "getCitiesByCountryResult"
 })
-@XmlRootElement(name = "GetCitiesByCountry")
-public class GetCitiesByCountry {
+@XmlRootElement(name = "GetCitiesByCountryResponse")
+public class GetCitiesByCountryResponse {
 
-    @XmlElement(name = "CountryName")
-    protected String countryName;
+    @XmlElement(name = "GetCitiesByCountryResult")
+    protected String getCitiesByCountryResult;
 
     /**
-     * Gets the value of the countryName property.
+     * Gets the value of the getCitiesByCountryResult property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCountryName() {
-        return countryName;
+    public String getGetCitiesByCountryResult() {
+        return getCitiesByCountryResult;
     }
 
     /**
-     * Sets the value of the countryName property.
+     * Sets the value of the getCitiesByCountryResult property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCountryName(String value) {
-        this.countryName = value;
+    public void setGetCitiesByCountryResult(String value) {
+        this.getCitiesByCountryResult = value;
     }
 
 }

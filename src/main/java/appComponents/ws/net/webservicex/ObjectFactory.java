@@ -1,5 +1,5 @@
 
-package net.webservicex;
+package appComponents.ws.net.webservicex;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;

@@ -1,5 +1,5 @@
 
-package net.webservicex;
+package appComponents.ws.net.webservicex;
 
 import java.net.MalformedURLException;
 import java.net.URL;

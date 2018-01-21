@@ -1,5 +1,5 @@
 
-package net.webservicex;
+package appComponents.ws.net.webservicex;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

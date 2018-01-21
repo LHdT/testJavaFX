@@ -1,5 +1,5 @@
 
-package net.webservicex;
+package appComponents.ws.net.webservicex;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -18,7 +18,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="CityName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="CountryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -30,40 +29,13 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "cityName",
     "countryName"
 })
-@XmlRootElement(name = "GetWeather")
-public class GetWeather {
+@XmlRootElement(name = "GetCitiesByCountry")
+public class GetCitiesByCountry {
 
-    @XmlElement(name = "CityName")
-    protected String cityName;
     @XmlElement(name = "CountryName")
     protected String countryName;
-
-    /**
-     * Gets the value of the cityName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCityName() {
-        return cityName;
-    }
-
-    /**
-     * Sets the value of the cityName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCityName(String value) {
-        this.cityName = value;
-    }
 
     /**
      * Gets the value of the countryName property.
